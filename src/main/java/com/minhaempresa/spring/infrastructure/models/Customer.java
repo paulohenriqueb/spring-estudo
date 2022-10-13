@@ -1,7 +1,6 @@
 package com.minhaempresa.spring.infrastructure.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import org.apache.coyote.Request;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
