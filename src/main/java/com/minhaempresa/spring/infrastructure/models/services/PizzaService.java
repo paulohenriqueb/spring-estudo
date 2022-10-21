@@ -1,7 +1,7 @@
-package com.minhaempresa.spring.application.services;
+package com.minhaempresa.spring.infrastructure.models.services;
 
-import com.minhaempresa.spring.application.services.exceptions.DatabaseException;
-import com.minhaempresa.spring.application.services.exceptions.ResourceNotFoundException;
+import com.minhaempresa.spring.infrastructure.models.services.exceptions.DatabaseException;
+import com.minhaempresa.spring.infrastructure.models.services.exceptions.ResourceNotFoundException;
 import com.minhaempresa.spring.infrastructure.models.Pizza;
 import com.minhaempresa.spring.infrastructure.repositories.PizzaRepository;
 import org.springframework.beans.factory.annotation.Autowired;

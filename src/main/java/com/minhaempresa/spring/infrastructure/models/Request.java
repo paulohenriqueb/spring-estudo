@@ -8,6 +8,7 @@ import java.time.LocalDateTime;
 import java.util.Objects;
 
 @Entity
+@Table(name = "tb_request")
 public class Request  implements Serializable {
     private static final long serialVersionUID = 1L;
 

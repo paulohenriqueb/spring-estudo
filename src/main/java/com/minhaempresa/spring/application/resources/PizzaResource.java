@@ -1,6 +1,6 @@
 package com.minhaempresa.spring.application.resources;
 
-import com.minhaempresa.spring.application.services.PizzaService;
+import com.minhaempresa.spring.infrastructure.models.services.PizzaService;
 import com.minhaempresa.spring.infrastructure.models.Pizza;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

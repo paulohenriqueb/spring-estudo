@@ -1,7 +1,7 @@
 package com.minhaempresa.spring.application.resources.Exceptions;
 
-import com.minhaempresa.spring.application.services.exceptions.DatabaseException;
-import com.minhaempresa.spring.application.services.exceptions.ResourceNotFoundException;
+import com.minhaempresa.spring.infrastructure.models.services.exceptions.DatabaseException;
+import com.minhaempresa.spring.infrastructure.models.services.exceptions.ResourceNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

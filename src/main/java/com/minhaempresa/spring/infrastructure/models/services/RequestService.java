@@ -1,8 +1,8 @@
-package com.minhaempresa.spring.application.services;
+package com.minhaempresa.spring.infrastructure.models.services;
 
 import com.minhaempresa.spring.application.dtos.RequestDTO;
-import com.minhaempresa.spring.application.services.exceptions.DatabaseException;
-import com.minhaempresa.spring.application.services.exceptions.ResourceNotFoundException;
+import com.minhaempresa.spring.infrastructure.models.services.exceptions.DatabaseException;
+import com.minhaempresa.spring.infrastructure.models.services.exceptions.ResourceNotFoundException;
 import com.minhaempresa.spring.infrastructure.models.Customer;
 import com.minhaempresa.spring.infrastructure.models.Pizza;
 import com.minhaempresa.spring.infrastructure.models.Request;
@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 import javax.persistence.EntityNotFoundException;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -40,8 +41,8 @@ public class RequestService {
         return optional.orElseThrow(()-> new ResourceNotFoundException(id));
     }
 
-    public Request findAll(){
-        return (Request) requestRepository.findAll();
+    public List<Request> findAll(){
+        return requestRepository.findAll();
     }
 
     public Request update(Long id, RequestDTO requestDTO){
